@@ -27,6 +27,6 @@ img {
 }
 
 span {
-    position: relative;
+    position: absolute;
     right: 10px;
 }
