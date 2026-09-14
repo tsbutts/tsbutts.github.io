@@ -1,8 +1,12 @@
 header, h1 {
   color: #B0E0E6;
+  font-family: 'Arial';
 }
-
-
+nav {
+  position: absolute;
+  left: 50%;
+  top: 50%
+}
 footer {
   color: #B0E0E6;
   bottom: 0;
