@@ -17,8 +17,8 @@ nav li {
 }
 
 footer {
-    position: relative;
-    left: 10px;
+    position: absolute;
+    right: 0;
 }
 
 img {
