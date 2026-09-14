@@ -25,3 +25,8 @@ img {
     max-height: 400px;
     max-width: 400px;
 }
+
+span {
+    position: relative;
+    right: 10px;
+}
