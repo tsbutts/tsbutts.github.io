@@ -5,9 +5,11 @@ nav ul {
 nav li {
     display: inline;
     background-color: #B0E0E6;
-    padding-left: 30px;
+    padding-left: 30em;
+    padding-right: 30em;
+    /*padding-left: 30px;
     padding-right: 30px;
-    /*margin: 30em;
+    margin: 30em;
     margin-left: 30px;
     margin-right: 30px;*/
 }
