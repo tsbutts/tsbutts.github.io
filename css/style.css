@@ -1,11 +1,15 @@
-header, h1 {
+h1, h2 {
+  test-align: center;
   color: darkred;
   font-family: 'Arial';
+}
+h2 {
+  color: black;
 }
 nav {
   position: absolute;
   left: 50%;
-  top: 50%
+  top: 40%
 }
 footer {
   color: darkred;
