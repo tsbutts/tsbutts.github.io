@@ -1,5 +1,5 @@
 header, h1 {
-  color: #B0E0E6;
+  color: darkred;
   font-family: 'Arial';
 }
 nav {
@@ -8,7 +8,7 @@ nav {
   top: 50%
 }
 footer {
-  color: #B0E0E6;
+  color: darkred;
   position: absolute;
   bottom: 10px;
 }
