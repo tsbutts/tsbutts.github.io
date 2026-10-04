@@ -47,3 +47,24 @@ header .login-btn {
   text-decoration: none;
   font-weight: bold;
 }
+main {
+  padding: 1rem;
+}
+
+.hero {
+  margin: 0;
+}
+
+.hero figcaption {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+figcaption {
+  font-size: 0.9rem;
+}
+
+blockquote {
+  border-left: 4px solid #c9922e;
+  padding-left: 1rem;
+}
