@@ -120,3 +120,36 @@ footer {
 footer a {
   color: #c9922e;
 }
+
+@media (min-width: 640px) {
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .highlights {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .choices {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .intro-grid {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .medium-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .choices {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
