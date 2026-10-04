@@ -105,3 +105,18 @@ blockquote {
   text-align: center;
   padding: 2rem 1rem;
 }
+.medium-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+footer {
+  background-color: #1f1b18;
+  color: #f2f0eb;
+  padding: 1rem;
+}
+
+footer a {
+  color: #c9922e;
+}
