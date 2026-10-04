@@ -68,3 +68,40 @@ blockquote {
   border-left: 4px solid #c9922e;
   padding-left: 1rem;
 }
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.choices, .highlights {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.choice-card {
+  background-color: white;
+  border-left: 6px solid #c9922e;
+}
+
+.choice-card img {
+  width: 100%;
+}
+
+.choice-card div {
+  padding: 1rem;
+}
+
+.choice-card a {
+  text-decoration: none;
+  color: #1f1b18;
+  display: block;
+}
+
+.cta {
+  text-align: center;
+  padding: 2rem 1rem;
+}
