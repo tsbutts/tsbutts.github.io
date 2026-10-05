@@ -153,3 +153,39 @@ footer a {
     margin: 0 auto;
   }
 }
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.gallery figure {
+  margin: 0;
+}
+
+input, select, textarea {
+  width: 100%;
+  max-width: 30rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #8e3b2a;
+  color: white;
+  border: none;
+  font-size: 1rem;
+}
+
+@media (min-width: 640px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
