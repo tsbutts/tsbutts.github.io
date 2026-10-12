@@ -1,4 +1,4 @@
-const DATA_URL = "js/alpineBoarding.json";
+const DATA_URL = "js/boardingData.json";
 
 
 async function getData() {
