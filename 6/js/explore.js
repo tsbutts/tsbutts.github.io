@@ -1,7 +1,7 @@
 "use strict";
 
 const CONFIG = {
-  DATA_URL: "data/media.json",
+  DATA_URL: "js/media.json",
   VIEW_ID: "exploreView",
   STATUS_ID: "exploreStatus"
 };
