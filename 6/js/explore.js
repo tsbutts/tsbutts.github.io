@@ -188,6 +188,7 @@ async function startExplore() {
     const data = await loadMediaData();
     showCategories(data.categories);
   } catch (error) {
+    console.error(error);
     showView(buildErrorView(startExplore), MESSAGES.LOAD_ERROR);
   }
 }
