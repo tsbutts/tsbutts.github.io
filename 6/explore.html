@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Trevor Butts">
+  <meta name="description" content="Choose a category of art, then a medium, and read about how people have used it to express themselves.">
+  <title>Explore | Art History: Media of Expression</title>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header>
+    <div>
+      <p class="site-title">Art History: Media of Expression</p>
+      <button class="login-btn" type="button">Log in</button>
+    </div>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html" aria-current="page">Explore</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h1 class="visually-hidden">Explore art media</h1>
+
+    <!-- Announces each step change to screen readers -->
+    <p id="exploreStatus" class="visually-hidden" role="status" aria-live="polite"></p>
+
+    <!-- All three steps are rendered into this container by js/explore.js -->
+    <div id="exploreView"></div>
+
+    <noscript>
+      <p>This page needs JavaScript to show the art categories. Please turn it on and reload.</p>
+    </noscript>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Trevor Butts</p>
+    <p><a href="contact.html">Contact us</a></p>
+  </footer>
+
+  <script src="js/explore.js"></script>
+</body>
+</html>
