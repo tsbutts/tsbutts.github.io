@@ -1,0 +1,198 @@
+header nav a[aria-current="page"] {
+  border-bottom: 3px solid #c9922e;
+}
+
+/* ---------- Buttons ---------- */
+button {
+  min-height: 48px;
+  min-width: 48px;
+  padding: 0.5rem 1rem;
+  background-color: #8e3b2a;
+  color: white;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:active {
+  filter: brightness(0.85);
+}
+
+header .login-btn,
+.login-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #c9922e;
+  color: #1f1b18;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Link styled as a button */
+.btn {
+  display: inline-block;
+  min-height: 48px;
+  box-sizing: border-box;
+  padding: 0.75rem 1.5rem;
+  background-color: #8e3b2a;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-btn {
+  margin-bottom: 1rem;
+}
+ 
+/* ---------- Main content ---------- */
+main {
+  padding: 1rem;
+}
+
+.hero {
+  margin: 0;
+}
+
+.hero figcaption {
+  padding: 0.5rem 1rem;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.cta {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.medium-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* ---------- Cards ---------- */
+.choices,
+.highlights {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.choice-card {
+  background-color: white;
+  border-left: 6px solid #c9922e;
+}
+
+.choice-card img {
+  display: block;
+  width: 100%;
+}
+
+.choice-card div {
+  padding: 1rem;
+}
+
+/* Clickable card: a real <button> that fills the whole card */
+.choice-card .choice-btn {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  padding: 0;
+  background: none;
+  color: #1f1b18;
+  font: inherit;
+  text-align: left;
+}
+
+/* Only the Explore cards are interactive, so only they get feedback */
+@media (hover: hover) {
+  .choice-card:has(.choice-btn):hover {
+    box-shadow: 0 4px 12px rgba(31, 27, 24, 0.25);
+  }
+}
+
+/* Touch: the same feedback while a finger is pressed or held */
+.choice-card .choice-btn:active {
+  background-color: #f2e6d0;
+  filter: none;
+}
+
+.detail img {
+  display: block;
+  max-width: 100%;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.gallery figure {
+  margin: 0;
+}
+
+input,
+select,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 30rem;
+  min-height: 48px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+footer {
+  background-color: #1f1b18;
+  color: #f2f0eb;
+  padding: 1rem;
+}
+
+footer a {
+  color: #c9922e;
+}
+
+/* ---------- Larger screens ---------- */
+@media (min-width: 640px) {
+  .highlights {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .choices {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro-grid {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .medium-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .choices {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
