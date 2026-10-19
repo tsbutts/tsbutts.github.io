@@ -12,32 +12,32 @@
           "name": "Oil paint",
           "description": "Pigment ground into drying oil. It dries slowly, so artists can blend colors and rework a surface for days.",
           "history": "Oil painting spread across Europe in the 1400s and became the dominant medium for painters for centuries.",
-          "image": "",
-          "imageAlt": ""
+          "image": "images/painting1.jpg",
+          "imageAlt": "Young Ladies of the Village"
         },
         {
           "id": "acrylic",
           "name": "Acrylic paint",
           "description": "Pigment suspended in a water-based polymer. It dries fast, can be thinned with water, and works on many surfaces.",
           "history": "Acrylic paints were developed in the 1900s and were widely adopted by artists in the mid-1900s.",
-          "image": "",
-          "imageAlt": ""
+          "image": "images/painting2.jpg",
+          "imageAlt": "On the Beach"
         },
         {
           "id": "watercolor",
           "name": "Watercolor",
           "description": "Transparent pigment mixed with water and applied to paper. Light shows through the layers, giving a luminous look.",
           "history": "Watercolor has been used for thousands of years, from Egyptian manuscripts to landscape painters of the 1700s and 1800s.",
-          "image": "",
-          "imageAlt": ""
+          "image": "images/painting3.jpg",
+          "imageAlt": "A Heron"
         },
         {
           "id": "graffiti",
           "name": "Graffiti",
           "description": "Paint, markers and other tools used to mark public surfaces such as walls and trains.",
           "history": "Writing on walls is ancient, and modern graffiti grew out of urban street culture in the late 1900s.",
-          "image": "",
-          "imageAlt": ""
+          "image": "images/painting4.jpg",
+          "imageAlt": "Street Art"
         }
       ]
     },
@@ -53,32 +53,32 @@
           "name": "Stone",
           "description": "Carved by removing material from marble, limestone or granite. Mistakes are hard to undo, so the sculptor plans carefully.",
           "history": "Stone carving is among the oldest sculptural traditions and appears in nearly every ancient civilization.",
-          "image": "",
-          "imageAlt": ""
+          "image": "images/sculpture1.jpg",
+          "imageAlt": "Standing Shiva or Temple Guardian (Dvarapala)"
         },
         {
           "id": "bronze",
           "name": "Bronze",
           "description": "A metal alloy usually poured into a mold. It allows fine detail and can support thin, outstretched poses.",
           "history": "Bronze casting developed in the ancient world and was refined in places such as Greece, China and West Africa.",
-          "image": "",
-          "imageAlt": ""
+          "image": "images/sculpture2.jpg",
+          "imageAlt": "Ikẹ̀gòbọ̀ (Altar to the Hand)"
         },
         {
           "id": "ceramics",
           "name": "Ceramics",
           "description": "Clay shaped by hand or on a wheel, then hardened by firing in a kiln. Glazes add color and a waterproof surface.",
           "history": "Fired clay objects date back tens of thousands of years and are found in cultures worldwide.",
-          "image": "",
-          "imageAlt": ""
+          "image": "images/sculpture3.jpg",
+          "imageAlt": "Stirrup-spout bottle with seated figure"
         },
         {
           "id": "wood",
           "name": "Wood",
           "description": "Carved, joined or assembled. The grain of the wood guides how the sculptor works.",
           "history": "Wood carving has been used for ritual objects, architecture and figures across many cultures, though wood decays more easily than stone or metal.",
-          "image": "",
-          "imageAlt": ""
+          "image": "images/sculpture4.jpg",
+          "imageAlt": "Female figure"
         }
       ]
     },
@@ -94,32 +94,32 @@
           "name": "Weaving",
           "description": "Interlacing lengthwise threads (warp) with crosswise threads (weft) on a loom to make cloth.",
           "history": "Weaving is one of humanity's oldest crafts, and woven cloth has been central to trade and status in many societies.",
-          "image": "",
-          "imageAlt": ""
+          "image": "images/textile1.jpg",
+          "imageAlt": "Silk Weave"
         },
         {
           "id": "embroidery",
           "name": "Embroidery",
           "description": "Decorating fabric with needle and thread, using stitches to build patterns, images and text.",
           "history": "Embroidery appears in cultures around the world and was often used to mark rank, identity and tradition.",
-          "image": "",
-          "imageAlt": ""
+          "image": "images/textile2.jpg",
+          "imageAlt": "Embroidery with the Annunciation"
         },
         {
           "id": "quilting",
           "name": "Quilting",
           "description": "Stitching layers of fabric together, often with padding in between, in decorative patterns.",
           "history": "Quilting began as a way to make warm bedding and clothing and grew into a rich storytelling and community art.",
-          "image": "",
-          "imageAlt": ""
+          "image": "images/textile3.jpg",
+          "imageAlt": "Quilt, Prairie Flower Pattern"
         },
         {
           "id": "macrame",
           "name": "Macramé",
           "description": "Knotting cord by hand, without a loom or needle, to make patterned hangings and textures.",
           "history": "Knotting traditions exist in many places, and macramé became popular again in the 1900s.",
-          "image": "",
-          "imageAlt": ""
+          "image": "images/textile4.jpg",
+          "imageAlt": "Fragment of Macrame"
         }
       ]
     },
@@ -135,32 +135,32 @@
           "name": "Woodblock",
           "description": "A design is carved into a wooden block, inked, and pressed onto paper or cloth. Raised areas print.",
           "history": "Woodblock printing began in East Asia and later spread to Europe, where it helped make books and images affordable.",
-          "image": "",
-          "imageAlt": ""
+          "image": "images/print1.jpg",
+          "imageAlt": "Woodblock of Collected Poems of the House of Springtime Sleep"
         },
         {
           "id": "lithography",
           "name": "Lithography",
           "description": "An image is drawn with greasy material on a flat stone or plate. Ink sticks only to the greasy areas.",
           "history": "Lithography was invented in the late 1700s and allowed artists to print drawings with a natural, painterly line.",
-          "image": "",
-          "imageAlt": ""
+          "image": "images/print2.jpg",
+          "imageAlt": "Lithograph from Baron Taylor's "Voyages Pittoresques"
         },
         {
           "id": "etching",
           "name": "Etching",
           "description": "Lines are bitten into a metal plate with acid. Ink fills the lines and is transferred to damp paper under pressure.",
           "history": "Etching became popular in Europe in the 1500s and 1600s and allowed very fine, flowing lines.",
-          "image": "",
-          "imageAlt": ""
+          "image": "images/print3.jpg",
+          "imageAlt": "Etching of Firearm Ornament"
         },
         {
           "id": "photography",
           "name": "Photography",
           "description": "Images made by capturing light, first on chemically treated surfaces and later on digital sensors.",
           "history": "Photography emerged in the 1800s and quickly changed portraiture, documentation and art.",
-          "image": "",
-          "imageAlt": ""
+          "image": "images/print4.jpg",
+          "imageAlt": "Picture Gallery Photographs"
         }
       ]
     }
