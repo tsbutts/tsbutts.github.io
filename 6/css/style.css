@@ -1,3 +1,125 @@
+/* ---------- Base ---------- */
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  line-height: 1.6;
+  color: #1f1b18;
+  background-color: #f2f0eb;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3 {
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  color: #8e3b2a;
+}
+
+a {
+  color: #8e3b2a;
+}
+
+figcaption {
+  font-size: 0.9rem;
+}
+
+blockquote {
+  border-left: 4px solid #c9922e;
+  padding-left: 1rem;
+}
+/* ---------- Accessibility helpers ---------- */
+/* Text that only screen readers should read */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Skip link is hidden until it receives keyboard focus */
+.skip-link {
+  position: absolute;
+  left: 0.5rem;
+  top: -4rem;
+  z-index: 100;
+  padding: 0.75rem 1rem;
+  background-color: #fff;
+  color: #1f1b18;
+}
+
+.skip-link:focus {
+  top: 0.5rem;
+}
+
+/* Clear keyboard focus on every interactive element */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #c9922e;
+  outline-offset: 3px;
+}
+
+/* Headings are focused by script after each step; show a ring only for keyboard users */
+h2:focus {
+  outline: none;
+}
+
+h2:focus-visible {
+  outline: 3px solid #c9922e;
+  outline-offset: 4px;
+}
+
+/* ---------- Header and navigation ---------- */
+header {
+  background-color: #1f1b18;
+  color: #f2f0eb;
+  padding: 1rem;
+}
+
+/* Title and login button sit on one row, wrapping on narrow screens */
+header > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-title {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header a {
+  color: #f2f0eb;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+/* Nav links get a finger-sized tap area */
+header nav a {
+  display: inline-block;
+  padding: 0.75rem 0.25rem;
+}
+
 header nav a[aria-current="page"] {
   border-bottom: 3px solid #c9922e;
 }
@@ -123,11 +245,13 @@ main {
   filter: none;
 }
 
+/* Detail view */
 .detail img {
   display: block;
   max-width: 100%;
 }
 
+/* ---------- Gallery and forms ---------- */
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
@@ -149,6 +273,7 @@ textarea {
   font-size: 1rem;
 }
 
+/* ---------- Footer ---------- */
 footer {
   background-color: #1f1b18;
   color: #f2f0eb;
