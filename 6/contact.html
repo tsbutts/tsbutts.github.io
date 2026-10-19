@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Trevor Butts">
+  <meta name="description" content="Contact the team behind Art History: Media of Expression with questions, suggestions or corrections.">
+  <title>Contact | Art History: Media of Expression</title>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <div>
+      <p class="site-title">Art History: Media of Expression</p>
+      <button class="login-btn" type="button">Log in</button>
+    </div>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h1>Contact us</h1>
+    <p>Questions, suggestions or corrections? Send us a message. All fields are required.</p>
+
+    <form id="contactForm">
+      <p>
+        <label for="contactName">Name</label><br>
+        <input type="text" id="contactName" name="name" autocomplete="name" required>
+      </p>
+      <p>
+        <label for="contactEmail">Email</label><br>
+        <input type="email" id="contactEmail" name="email" autocomplete="email" required>
+      </p>
+      <p>
+        <label for="contactTopic">Topic</label><br>
+        <select id="contactTopic" name="topic">
+          <option value="question">General question</option>
+          <option value="suggestion">Suggest content</option>
+          <option value="problem">Report a problem</option>
+        </select>
+      </p>
+      <p>
+        <label for="contactMessage">Message</label><br>
+        <textarea id="contactMessage" name="message" rows="6" required></textarea>
+      </p>
+      <button type="submit">Send message</button>
+    </form>
+
+    <!-- Confirmation text is announced to screen readers when it appears -->
+    <p id="contactStatus" role="status" aria-live="polite"></p>
+
+    <p>Email: <a href="mailto:tsbutts@go.olemiss.edu">tsbutts@go.olemiss.edu</a></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Trevor Butts</p>
+    <p><a href="contact.html">Contact us</a></p>
+  </footer>
+
+  <script src="js/contact.js"></script>
+</body>
+</html>
