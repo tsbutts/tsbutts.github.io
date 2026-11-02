@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Trevor Butts">
+  <meta name="description" content="Contact the team behind Art History: Media of Expression with questions, suggestions or corrections.">
+  <title>Contact | Art History: Media of Expression</title>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <div>
+      <p class="site-title">Art History: Media of Expression</p>
+      <button class="login-btn" id="changePwBtn" type="button" hidden>Change password</button>
+      <button class="login-btn" id="authBtn" type="button">Log in</button>
+    </div>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="protected"><a href="explore.html">Explore</a></li>
+        <li class="protected"><a href="about.html">About</a></li>
+        <li class="protected"><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h1>Contact us</h1>
+    <p>Questions, suggestions or corrections? Send us a message. All fields are required.</p>
+
+    <form id="contactForm">
+      <p>
+        <label for="contactName">Name</label><br>
+        <input type="text" id="contactName" name="name" autocomplete="name" required>
+      </p>
+      <p>
+        <label for="contactEmail">Email</label><br>
+        <input type="email" id="contactEmail" name="email" autocomplete="email" required>
+      </p>
+      <p>
+        <label for="contactTopic">Topic</label><br>
+        <select id="contactTopic" name="topic">
+          <option value="question">General question</option>
+          <option value="suggestion">Suggest content</option>
+          <option value="problem">Report a problem</option>
+        </select>
+      </p>
+      <p>
+        <label for="contactMessage">Message</label><br>
+        <textarea id="contactMessage" name="message" rows="6" required></textarea>
+      </p>
+      <div id="contactSpinner" class="loading" role="status" hidden>
+        <span class="spinner" aria-hidden="true"></span>
+        <p>Sending...</p>
+      </div>
+      <button type="submit" id="contactSubmit">Send message</button>
+    </form>
+
+    <p id="contactError" class="auth-error" role="alert"></p>
+    <p id="contactStatus" class="auth-success" role="status" aria-live="polite"></p>
+
+    <p>Email: <a href="mailto:tsbutts@go.olemiss.edu">tsbutts@go.olemiss.edu</a></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Trevor Butts</p>
+    <p><a href="contact.html">Contact us</a></p>
+  </footer>
+  <dialog id="authDialog" aria-labelledby="authTitle">
+      <div class="auth-box">
+        <button type="button" class="auth-close" id="authClose" aria-label="Close dialog">&times;</button>
+        <h2 id="authTitle" tabindex="-1">Log in</h2>
+        <p id="authHelp">Log in to explore the collection.</p>
+
+        <p id="authError" class="auth-error" role="alert"></p>
+        <p id="authSuccess" class="auth-success" role="status"></p>
+        <div id="authSpinner" class="loading" role="status" hidden>
+          <span class="spinner" aria-hidden="true"></span>
+          <p>Working...</p>
+        </div>
+
+        <form id="loginForm">
+          <label for="loginEmail">Email</label>
+          <input id="loginEmail" type="email" autocomplete="email" required>
+          <label for="loginPassword">Password</label>
+          <input id="loginPassword" type="password" autocomplete="current-password" required>
+          <button class="btn" type="submit">Log in</button>
+          <button class="link-btn" type="button" id="showSignup">Need an account? Sign up</button>
+        </form>
+
+        <form id="signupForm" hidden>
+          <label for="signupEmail">Email</label>
+          <input id="signupEmail" type="email" autocomplete="email" required>
+          <label for="signupPassword">Password (at least 6 characters)</label>
+          <input id="signupPassword" type="password" autocomplete="new-password" minlength="6" required>
+          <label for="signupConfirm">Confirm password</label>
+          <input id="signupConfirm" type="password" autocomplete="new-password" required>
+          <button class="btn" type="submit">Create account</button>
+          <button class="link-btn" type="button" id="showLogin">Already have an account? Log in</button>
+        </form>
+
+        <form id="changePwForm" hidden>
+          <label for="currentPassword">Current password</label>
+          <input id="currentPassword" type="password" autocomplete="current-password" required>
+          <label for="newPassword">New password (at least 6 characters)</label>
+          <input id="newPassword" type="password" autocomplete="new-password" minlength="6" required>
+          <button class="btn" type="submit">Change password</button>
+        </form>
+      </div>
+    </dialog>
+  <script type="module" src="js/auth.js"></script>
+  <script type="module" src="js/contact.js"></script>
+</body>
+</html>
