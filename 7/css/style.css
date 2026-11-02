@@ -1,0 +1,424 @@
+/* ---------- Base ---------- */
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  line-height: 1.6;
+  color: #1f1b18;
+  background-color: #f2f0eb;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3 {
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  color: #8e3b2a;
+}
+
+a {
+  color: #8e3b2a;
+}
+
+figcaption {
+  font-size: 0.9rem;
+}
+
+blockquote {
+  border-left: 4px solid #c9922e;
+  padding-left: 1rem;
+}
+/* ---------- Accessibility helpers ---------- */
+/* Text that only screen readers should read */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Skip link is hidden until it receives keyboard focus */
+.skip-link {
+  position: absolute;
+  left: 0.5rem;
+  top: -4rem;
+  z-index: 100;
+  padding: 0.75rem 1rem;
+  background-color: #fff;
+  color: #1f1b18;
+}
+
+.skip-link:focus {
+  top: 0.5rem;
+}
+
+/* Clear keyboard focus on every interactive element */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #c9922e;
+  outline-offset: 3px;
+}
+
+/* Headings are focused by script after each step; show a ring only for keyboard users */
+h2:focus {
+  outline: none;
+}
+
+h2:focus-visible {
+  outline: 3px solid #c9922e;
+  outline-offset: 4px;
+}
+
+/* ---------- Header and navigation ---------- */
+header {
+  background-color: #1f1b18;
+  color: #f2f0eb;
+  padding: 1rem;
+}
+
+/* Title and login button sit on one row, wrapping on narrow screens */
+header > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-title {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header a {
+  color: #f2f0eb;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+/* Nav links get a finger-sized tap area */
+header nav a {
+  display: inline-block;
+  padding: 0.75rem 0.25rem;
+}
+
+header nav a[aria-current="page"] {
+  border-bottom: 3px solid #c9922e;
+}
+
+/* ---------- Buttons ---------- */
+button {
+  min-height: 48px;
+  min-width: 48px;
+  padding: 0.5rem 1rem;
+  background-color: #8e3b2a;
+  color: white;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:active {
+  filter: brightness(0.85);
+}
+
+header .login-btn,
+.login-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #c9922e;
+  color: #1f1b18;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Link styled as a button */
+.btn {
+  display: inline-block;
+  min-height: 48px;
+  box-sizing: border-box;
+  padding: 0.75rem 1.5rem;
+  background-color: #8e3b2a;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-btn {
+  margin-bottom: 1rem;
+}
+ 
+/* ---------- Main content ---------- */
+main {
+  padding: 1rem;
+}
+
+.hero {
+  margin: 0;
+}
+
+.hero figcaption {
+  padding: 0.5rem 1rem;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.cta {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.medium-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* ---------- Cards ---------- */
+.choices,
+.highlights {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.choice-card {
+  background-color: white;
+  border-left: 6px solid #c9922e;
+}
+
+.choice-card img {
+  display: block;
+  width: 100%;
+}
+
+.choice-card div {
+  padding: 1rem;
+}
+
+/* Clickable card: a real <button> that fills the whole card */
+.choice-card .choice-btn {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  padding: 0;
+  background: none;
+  color: #1f1b18;
+  font: inherit;
+  text-align: left;
+}
+
+/* Only the Explore cards are interactive, so only they get feedback */
+@media (hover: hover) {
+  .choice-card:has(.choice-btn):hover {
+    box-shadow: 0 4px 12px rgba(31, 27, 24, 0.25);
+  }
+}
+
+/* Touch: the same feedback while a finger is pressed or held */
+.choice-card .choice-btn:active {
+  background-color: #f2e6d0;
+  filter: none;
+}
+
+/* Detail view */
+.detail img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ---------- Gallery and forms ---------- */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.gallery figure {
+  margin: 0;
+}
+
+input,
+select,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 30rem;
+  min-height: 48px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: #1f1b18;
+  color: #f2f0eb;
+  padding: 1rem;
+}
+
+footer a {
+  color: #c9922e;
+}
+
+/* ---------- Larger screens ---------- */
+@media (min-width: 640px) {
+  .highlights {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .choices {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro-grid {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .medium-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .choices {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .loading {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 0;
+  }
+
+  .spinner {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 3px solid currentColor;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .spinner { animation-duration: 3s; }
+  }
+  /* ---------- Auth dialog ---------- */
+  .protected[hidden] { display: none; }
+  body:not(.signed-in) .protected { display: none; }
+
+  dialog#authDialog {
+    width: min(92vw, 26rem);
+    max-height: 90vh;
+    padding: 0;
+    border: 0;
+    border-radius: 0.5rem;
+    background: #fff;
+    color: #1f1b18;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  }
+  dialog#authDialog::backdrop { background: rgba(0, 0, 0, 0.6); }
+
+  .auth-box { position: relative; padding: 1.5rem 1.25rem; }
+  .auth-box h2 { margin-top: 0; padding-right: 2rem; }
+
+  .auth-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 0;
+    background: transparent;
+    font-size: 1.75rem;
+    line-height: 1;
+    cursor: pointer;
+    color: inherit;
+  }
+
+  .auth-box form { display: flex; flex-direction: column; gap: 0.5rem; }
+  .auth-box label { font-weight: 600; margin-top: 0.5rem; }
+  .auth-box input {
+    padding: 0.65rem;
+    font: inherit;
+    border: 2px solid #8a8178;
+    border-radius: 0.25rem;
+  }
+  .auth-box input:focus-visible,
+  .auth-box button:focus-visible { outline: 3px solid #c8922b; outline-offset: 2px; }
+  .auth-box .btn { margin-top: 1rem; cursor: pointer; }
+
+  .link-btn {
+    background: none;
+    border: 0;
+    padding: 0.5rem 0;
+    font: inherit;
+    color: #8f3a26;
+    text-decoration: underline;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .auth-error {
+    color: #8f1d1d;
+    background: #fbeaea;
+    border-left: 4px solid #8f1d1d;
+    padding: 0.5rem 0.75rem;
+  }
+  .auth-success {
+    color: #1d5c2e;
+    background: #e8f5ea;
+    border-left: 4px solid #1d5c2e;
+    padding: 0.5rem 0.75rem;
+  }
+  .auth-error:empty, .auth-success:empty { display: none; }
+
+  .login-btn { cursor: pointer; }
+  .login-btn[hidden] { display: none; }
+  
+  .auth-box [hidden],
+  .auth-box form[hidden],
+  #authSpinner[hidden] { display: none !important; }
+  #contactSpinner[hidden] { display: none !important; }
+}
